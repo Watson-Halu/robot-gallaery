@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false, // 宣告Default 型別為 any,不需要每次額外宣告
     "target": "es5",
     "lib": [
       "dom",
@@ -18,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
   "include": [
     "src"
