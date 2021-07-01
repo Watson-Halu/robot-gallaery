@@ -1,15 +1,19 @@
 import React from "react";
-// import logo from "./logo.svg";
+import logo from "./logo.svg";
 import robots from "./mockdata/robots.json";
 import Robot from "./components/Robot";
+// import "./index.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <ul>
-      {robots.map((r) => {
-        return <Robot id={r.id} name={r.name} email={r.email} />;
-      })}
-    </ul>
+    <div className={styles.app}>
+      <div className={styles.robotList}>
+        {robots.map((r) => {
+          return <Robot id={r.id} name={r.name} email={r.email} />;
+        })}
+      </div>
+    </div>
   );
 }
 export default App;
